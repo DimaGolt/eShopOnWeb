@@ -8,7 +8,7 @@ permissions:
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
   RESOURCE-GROUP: rg-eshoponweb-westeurope
-  LOCATION: polandcentral
+  LOCATION: austriaeast
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: ID
   WEBAPP-NAME: devops-webapp-westeurope-2622818761
