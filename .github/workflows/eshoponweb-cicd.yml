@@ -10,7 +10,7 @@ env:
   RESOURCE-GROUP: rg-eshoponweb-westeurope
   LOCATION: polandcentral
   TEMPLATE-FILE: infra/webapp.bicep
-  SUBSCRIPTION-ID: ${{ env.SUBSCRIPTION-ID }}
+  SUBSCRIPTION-ID: ID
   WEBAPP-NAME: devops-webapp-westeurope-2622818761
 
 jobs:
@@ -83,7 +83,7 @@ jobs:
       - name: deploy
         uses: azure/arm-deploy@v2
         with:
-          subscriptionId: ${{ env.SUBSCRIPTION-ID }}
+          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroupName: ${{ env.RESOURCE-GROUP }}
           template: bicep-template/webapp.bicep
           parameters: "webAppName=${{ env.WEBAPP-NAME }} location=${{ env.LOCATION }}"
