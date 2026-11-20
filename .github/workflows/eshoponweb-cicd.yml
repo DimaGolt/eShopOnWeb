@@ -8,10 +8,10 @@ permissions:
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
   RESOURCE-GROUP: rg-eshoponweb-eastus
-  LOCATION: austriaeast
+  LOCATION: norwayeast
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: ID
-  WEBAPP-NAME: devops-webapp-eastus-2498719759
+  WEBAPP-NAME: devops-webapp-norwayeast-2498719759
 
 jobs:
   #Build, test and publish .net web project in repository
